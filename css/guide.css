@@ -1,0 +1,771 @@
+/* Guide Page Styles */
+.guide {
+    padding: 2rem 0;
+}
+
+.guide-planner-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ecfdf5, #eff6ff);
+    border: 1px solid #bbf7d0;
+    font-size: 0.92rem;
+    color: #14532d;
+}
+
+.guide-planner-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: #0f766e;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.guide-planner-btn:hover {
+    background: #115e59;
+}
+
+.guide .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress-bar > div {
+    height: 100%;
+    background: #4285f4;
+    transition: width 0.3s ease;
+}
+
+.phase-indicators {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.phase-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.phase-indicator i {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    background: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.phase-indicator.active i {
+    background: #4285f4;
+    color: white;
+}
+
+.phase-indicator.completed i {
+    background: #34a853;
+    color: white;
+}
+
+/* Phase Navigation */
+.phase-navigation {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.phase-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.phase-btn:hover {
+    background: #e0e0e0;
+}
+
+.phase-btn.active {
+    background: #4285f4;
+    color: white;
+}
+
+/* Phase Content */
+.phase-content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.phase-details {
+    animation: fadeIn 0.3s ease;
+}
+
+.phase-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Steps Section */
+.steps-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.step-card h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.step-details {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    color: #666;
+}
+
+.step-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checklist {
+    margin-top: 1rem;
+}
+
+.checklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    margin: 0.5rem 0;
+}
+
+.checklist label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checklist input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.materials {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.materials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.materials li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.materials li.material-line {
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    align-items: center;
+}
+
+.material-shop {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #0d9488;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.material-shop:hover {
+    text-decoration: underline;
+}
+
+/* Tools Section */
+.tools-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.calculator-form input,
+.calculator-form select {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.calculator-form button {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.calculator-form button:hover {
+    background: #3367d6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .phase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .phase-navigation {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+    }
+
+    .phase-indicators {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .phase-indicator {
+        flex: 1 1 calc(33.333% - 1rem);
+        min-width: 80px;
+    }
+}
+
+/* ——— Smart Construction Planner (pages/planner.html) ——— */
+.planner-hero {
+    background: linear-gradient(135deg, #0c1222 0%, #1a2744 45%, #0d3b2e 100%);
+    color: #e8eef7;
+    padding: 3rem 1.25rem 4rem;
+    font-family: 'Outfit', 'DM Sans', system-ui, sans-serif;
+}
+
+.planner-hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.planner-kicker {
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 0.75rem;
+}
+
+.planner-hero h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.planner-lead {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    opacity: 0.92;
+    max-width: 52ch;
+    margin-bottom: 1.75rem;
+}
+
+.planner-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.btn-planner-primary,
+.btn-planner-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-planner-primary {
+    background: linear-gradient(90deg, #22c55e, #14b8a6);
+    color: #04120c;
+    box-shadow: 0 8px 24px rgba(20, 184, 166, 0.35);
+}
+
+.btn-planner-primary:hover {
+    transform: translateY(-1px);
+}
+
+.btn-planner-ghost {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e8eef7;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-planner-ghost:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+}
+
+.planner-workspace {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr) 300px;
+    gap: 1.5rem;
+    padding: 2rem 1rem 4rem;
+    align-items: start;
+    font-family: 'DM Sans', 'Poppins', system-ui, sans-serif;
+}
+
+.planner-rail {
+    position: sticky;
+    top: 5.5rem;
+}
+
+.rail-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.wizard-rail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1.5rem;
+}
+
+.wizard-step {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.wizard-step .step-num {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: var(--bg-accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.wizard-step.active {
+    border-color: #14b8a6;
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.12), rgba(34, 197, 94, 0.08));
+}
+
+.todo-panel {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.todo-panel h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.todo-hint {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.todo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.85rem;
+}
+
+.todo-row label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.todo-row input:checked + span {
+    opacity: 0.55;
+    text-decoration: line-through;
+}
+
+.todo-del {
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 0.25rem;
+}
+
+.todo-add-row {
+    display: flex;
+    gap: 0.35rem;
+}
+
+.todo-add-row input {
+    flex: 1;
+    padding: 0.5rem 0.65rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    font-size: 0.85rem;
+}
+
+.planner-main {
+    min-height: 420px;
+}
+
+.planner-panel {
+    display: none;
+    animation: fadeIn 0.35s ease;
+}
+
+.planner-panel.active {
+    display: block;
+}
+
+.glass-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.glass-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-sub {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.floating-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.floating-label input,
+.floating-label select {
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.panel-heading {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.panel-intro {
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    line-height: 1.55;
+}
+
+.discipline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.discipline-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.discipline-card header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.discipline-card header i {
+    color: #14b8a6;
+    font-size: 1.25rem;
+}
+
+.discipline-card h3 {
+    font-size: 1.05rem;
+}
+
+.discipline-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.mini-steps {
+    margin: 0 0 1rem 1rem;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    line-height: 1.45;
+}
+
+.shop-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.shop-chip {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    background: var(--bg-accent);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    transition: background 0.15s;
+}
+
+.shop-chip:hover {
+    background: rgba(20, 184, 166, 0.15);
+}
+
+.rough-calc .calc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rough-calc .calc-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.92rem;
+}
+
+.rough-calc .hint {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+.roadmap-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.65;
+    color: var(--text-primary);
+}
+
+.roadmap-list li {
+    margin-bottom: 0.65rem;
+}
+
+.planner-copilot {
+    position: sticky;
+    top: 5.5rem;
+}
+
+.copilot-sticky {
+    background: linear-gradient(160deg, #0f172a 0%, #134e4a 100%);
+    color: #ecfeff;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.copilot-sticky h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.copilot-tag {
+    font-size: 0.72rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.copilot-body {
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+.copilot-block {
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.copilot-block:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .planner-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .planner-rail,
+    .planner-copilot {
+        position: static;
+    }
+
+    .wizard-rail {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wizard-step {
+        flex: 1 1 calc(50% - 0.35rem);
+    }
+} 
